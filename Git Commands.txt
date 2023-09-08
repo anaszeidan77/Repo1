@@ -1,0 +1,54 @@
+cd c:// انتقال
+ls عرض الملفات الموجودة
+explorer . (or) start .  فتح في متصفح المفات
+cd ../ الى الخلف
+اول خطوة git ضبط الاسم والايميل في
+- (git فقط اول تنصيب)
+- git config --global  user.name "name"  (ضبط الاسم)
+- git config --global  user.email "****@gmail.com" (ضبط والايميل)
+- git config --global  user.name (عرض الاسم)
+- git config --global  user.email (عرض الايميل)
+---------------git commands-------------------
+1- git init 	 	        (git انشاء مستودع)     ------     
+2- git status		        (git عرض حالة)	     ------
+3- git add .    	        (امر لتتبع جميع الملفات)	      ------
+4- git commit -m "nameVirsion"  (تاكيد او حفظ عملية التعديل)    ------
+5- git branch "nameBranch"      (انشاء فرع اخر)
+6- git switch nameBranch        (الدخول للفرع)
+6- git checkout nameBranch        (الدخول للفرع)
+7- git branch -a	        r+l (عرض كل الفروع)
+8- git branch -l	        locally تجلب الفروع 
+9- git branch -r 	        remotly تجلب الفروع 
+10- git tag "nameTag"		انشاء وسم	
+11- git tag			عرض الوسوم
+ - git tag -a "nameTage" -m "messege" 	annotated انشاء 
+ - git tag "nameTage"			lightWeight tage انشاء  
+12- git show nameTage		عرض معلومات الوسم
+13- git checkout v2             tag انتقال الى
+14- git tag -l "v*" 		tag البحث عن 
+15- git reset HEAD src/j1/J1.java	  (add)التراجع عن اخر حفظ بعد
+16- git reset --head 		 	  (netbeans)في(commit)رجوع الكود لاخر حفظ 
+17- git status --short  (or) git status -s عرض حالة التعديل الحالية
+18- git rm src/j2/New.java	 	 حذف ملف او مجلد 
+ -git rm --cached myFile.py   لكـن لا تريـد حذفـه مـن مجلـد المـشروع نفسـه، أي فقـط حـذف المتابعـة مـع بقـاء 
+الملـف نفسـه.
+19- git mv (current file) (new path)     نقل ملف لمسار  او تعديله
+20- git (currentName) (newName)          تغيير الاسم
+21- git log                    عرض معلومات كل عمليات الحفظ
+22- git log -2                 اخر عمليتين حفظ 
+23- git log -p            commit بحيـث تعـرض تفاصيـل عـن التعديـلات 
+24- git log --state     بإمكانك كذلك رؤية عدد من الإحصائيات بشكل مختصر في حال استخدمت الخيا
+25- git log --pretty=oneline	معلومات عن الحفظ  
+26- git log --pretty=format:"%h"  معلومات عن الحفظ
+27- git log --pretty=short    الكاتب والحفظ
+28- git log --pretty=full
+29- git log --pretty=fuller   كل التفاصيل 
+30- git log --pretty=format:"%an ___ %ar ___ %ae"    وفق نمط معين (commit) الاسم ___ التاربخ ___ الايميل  : لكل
+31- git log --since=2.weeks   عمليات الحفظ خلال اسبوعين 
+32- git log --since=1.hours   عمليات الحفظ خلال ساعة
+33- git log --since=1.years   عمليات الحفظ خلال سنة
+34- git log -S "FunctionName" الحفظ الذي تمت اضافة هذه الدالة او التعديل فيه
+35- git commit --amend 	      كتابة حفظ فوق الحفظ لحاليي- التعديل عل دالة او كود بدون حفظ جديد
+36- git clone "linkGit"	 GitHub استيراد مشروع من 
+37- git fetch origin
+38- git push origin main
